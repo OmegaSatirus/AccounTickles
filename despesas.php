@@ -64,7 +64,7 @@ $result = $queryCat->fetchAll(PDO::FETCH_ASSOC);
         <nav>
             <div class="Tr-TablePrincipal AlinhadoCen">
                 <div id="logo" class="ThGrid1-5">
-                    <h2><a href="./login.php" class="">AccounTickles</a></h2>
+                    <h4><a href="./login.php" class="">AccounTickles</a></h4>
                 </div>
                 <div class="ThGrid1-5">
 
@@ -81,7 +81,7 @@ $result = $queryCat->fetchAll(PDO::FETCH_ASSOC);
                     <a href="./perfil.php" class="ThGrid1-5">
                         <h4><i class="fa-solid fa-person"></i></h4>
                     </a>
-                    <h2 id="impressaoSaldo" class="ThGrid1-5 ">R$<?= number_format($capital, 2, ',', '.'); ?></h2>
+                    <p id="impressaoSaldo" class="ThGrid1-5 ">R$<?= number_format($capital, 2, ',', '.'); ?></p>
                 </div>
             </div>
         </nav>

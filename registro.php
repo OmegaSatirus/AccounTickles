@@ -15,7 +15,7 @@
         <nav>
             <div class="Tr-TablePrincipal AlinhadoCen">
                 <div id="logo" class="ThGrid1-5">
-                    <h2><a href="./registro.php" class="">AccounTickles</a></h2>
+                    <h4><a href="./registro.php" class="">AccounTickles</a></h4>
                 </div>
             </div>
         </nav>
