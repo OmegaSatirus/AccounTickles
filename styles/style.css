@@ -1,0 +1,390 @@
+/* formatação estrutural inicio */
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap')
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #05252b;
+  color:#ffa500 ;
+}
+#MainHeader{
+  position: fixed;
+  width: 100vw;
+  height: 7.5vh;
+}
+
+#CorpoPagina{
+  position: fixed;
+  margin-top: 7.5vh;
+  width: 100vw;
+  height: 90vh;
+  padding: 2.5vh 2.5vh;
+}
+#MainFooter{
+  margin-top: 97.5vh;
+  position: fixed;
+}
+
+
+/* fim formatação estrutural */
+
+
+/* inicio formatação de alinhamento */
+
+.AlinhadoCen{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ALinhadoDir{
+  text-align: right;
+  justify-content: right;
+  align-items: center;
+}
+
+.AlinhadoEsq{
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+}
+
+.AlinhadoBtw{
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Final formatação de alinhamento */
+
+/* inicio formatações gerais */
+
+#MainHeader ul{
+margin-top: 2.5vh;
+}
+
+.RowFake{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    list-style: none;
+}
+
+.Fake-Button{
+    padding: .5vw .8vh;
+    border-radius: 16px;
+    border: 2px solid #ffa500;
+    background-color: #dbf5f4;
+    color: #ffa500;
+    font-weight: bolder;
+    transition: all ease-in-out .8s;
+}
+.Fake-Button:hover{
+    padding: .5vw .8vh;
+    border-radius: 20px;
+    border: 2px solid #dbf5f4;
+    background-color: #ffa500;
+    color: #dbf5f4;
+    font-weight: bolder;
+}
+
+* a{
+    color: #ffa500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#AreaRolagem {
+  padding: .5%;
+  position: relative; 
+  height: 100%;
+  overflow: auto;
+}
+
+td:hover {
+  cursor: pointer;
+}
+
+i{
+  color: #ffa500;
+}
+
+.Register label{
+  cursor: pointer;
+}
+
+.Register button[type="submit"]{
+  background-color: #dbf5f4;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: all .5s ease-in-out;
+  padding: 5%;
+  color: black;
+  background-color: #ccc;
+}
+
+.Register input[type="text"],input[type="email"],input[type="password"],input[type="number"]{
+  background-color: #dbf5f4;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: all .3s ease-in-out;
+}
+
+.Register input[type="text"]:hover,input[type="email"]:hover,input[type="password"]:hover,input[type="number"]:hover,select:hover,button[type="submit"]:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+} 
+.Register input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,input[type="number"]:focus,select:focus,button[type="submit"]:focus{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.login label{
+  cursor: pointer;
+}
+
+.login button[type="submit"]{
+  background-color: #dbf5f4;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: all .5s ease-in-out;
+  padding: 5%;
+  color: black;
+  background-color: #ccc;
+}
+
+.login input[type="text"],input[type="email"],input[type="password"],input[type="number"]{
+  background-color: #dbf5f4;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: all .3s ease-in-out;
+}
+
+.login input[type="text"]:hover,input[type="email"]:hover,input[type="password"]:hover,input[type="number"]:hover,select:hover,button[type="submit"]:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+} 
+.login input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,input[type="number"]:focus,select:focus,button[type="submit"]:focus{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+/* Final formatações gerais */
+
+/* Formatações Main Inicio */
+
+.Main-Section {
+  width: 95vw;
+  height: 85vh;
+  border-radius: 32px;
+  background-color: #dbf5f4;
+  padding: 1.5%;
+}
+
+#FormularioLogin{
+  width: 50vw;
+  height: 40vh;
+  border-radius: 32px;
+  background-color: #dbf5f4;
+  padding: 1.5%;
+  margin: auto;
+}
+
+#FormularioRegistro{
+  width: 50vw;
+  height: 60vh;
+  border-radius: 32px;
+  background-color: #dbf5f4;
+  padding: 1.5%;
+  margin: auto;
+}
+
+#Reg-Log .ThGrid1-5{
+  border: none;
+}
+
+#Reg-Log a{
+height: 10vh;
+}
+
+#profile{
+  width: 50vw;
+  height: 40vh;
+  border-radius: 32px;
+  background-color: #dbf5f4;
+  padding: 1.5%;
+  margin: auto;
+}
+
+#Tabela{
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
+  padding: 1.5%;
+  border-radius: 8px;
+}
+
+label{
+  cursor: pointer;
+}
+
+button[type="submit"]{
+  background-color: #dbf5f4;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: all .5s ease-in-out;
+  padding: 5%;
+}
+
+input[type="text"],input[type="number"],input[type="date"],select{
+  background-color: #dbf5f4;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: all .3s ease-in-out;
+}
+
+
+input[type="text"]:hover,input[type="number"]:hover,input[type="date"]:hover,select:hover,button[type="submit"]:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+input[type="text"]:focus,input[type="number"]:focus,input[type="date"]:focus,select:focus,button[type="submit"]:focus{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+/* Final formatações main */
+
+/*Inicio formatação Grid's */
+th,td,tbody,thead{
+  margin: 0;
+  padding: 0;
+}
+
+th,td{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+th{
+cursor: pointer;  
+}
+
+#logo{
+  font-family: "Kode Mono", monospace;
+}
+
+#logo a:hover{
+  color: inherit;
+}
+
+th:hover{
+  cursor: pointer;
+}
+#TabelaGeral{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 85vw;
+  height: 65vh;
+  background-color: #c3d9e2;
+  border-radius: 16px;
+  overflow: auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.Tr-TablePrincipal{
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+}
+
+
+
+.ThGrid1-5{
+  border: black solid 1px;
+  height: 5vh;
+  width: 15vw;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: .8vh .8vw;
+  background-color: aliceblue;
+  transition: all 1s ease-in-out;
+}
+
+.Row1-2H{
+  display: flex;
+  flex-direction: row;
+  background-color: #c3d9e2;
+  border-radius: 16px;
+  margin: auto;
+  margin: 0 auto 1.5% auto;
+  width: 85vw;
+}
+
+.MetadeHorizontal{
+  width: 50%;
+  height: 80%;
+  margin: 1%;
+  padding: 2.5vh 2.5vw;
+}
+
+.Row1-2V{
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+.MetadeVertical{
+  width: 90%;
+  height: 80%;
+  margin: 1%; 
+}
+
+.MetadeVertical:nth-child(1){
+  height: 5vh;
+}
+
+.Row1-5H{
+  display: flex;
+  flex-direction: row;
+  background-color: #c3d9e2;
+  border-radius: 16px;
+  width: 85vw;
+  margin: auto;
+  margin: 0 auto 1.5% auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  width: 85vw;
+}
+
+.Parte1-5{
+  width: 15vw;
+  height: 80%;
+  margin: 0 1%;
+  padding: 2.5vh 2.5vw;
+}
+
+nav .ThGrid1-5:nth-child(2),
+nav .ThGrid1-5:nth-child(3),
+nav .ThGrid1-5:nth-child(4) {
+  background-color: transparent;
+  border: none;
+}
+
+#Saldo .ThGrid1-5{
+width:3vw ;
+}
+
+/*Final formatação Grid's */
